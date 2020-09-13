@@ -7,3 +7,10 @@ def index(request):
     }
 
     return render(request, 'deepagency/index.html', context=context)
+
+def start(request):
+    context = {
+
+    }
+
+    return render(request, 'deepagency/start.html', context=context)
