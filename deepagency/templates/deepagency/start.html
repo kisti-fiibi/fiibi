@@ -2,7 +2,7 @@
 
 {% block content %}
 사진을 넣어주세요.
-<form action="" method="POST" enctype="multipart/form-data">
+<form action="{% url 'deepagency:detail' %}" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
     <input type="file" name="image" accept="image/*">
     <br>

@@ -1,0 +1,17 @@
+{% extends "deepagency/base.html" %}
+
+{% block content %}
+
+{{ upload.image }}
+<!-- <br>
+{{ upload.image.url }}
+<br>
+{{ upload.image.path }} -->
+
+<br>
+<img src="{{ upload.image.url }}">
+<!-- <img src="{{ upload.image.url }}" width="500" height="500"> -->
+<form action="">
+    <input class="btn btn-dark" type="submit" value="모델 찾기">
+</form>
+{% endblock %}
